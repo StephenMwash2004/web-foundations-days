@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
     <title>QuickNotes - About</title>
 </head>
 <body>
@@ -13,8 +14,10 @@
     <p>Your simple note-taking application.</p>
 
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a>
+        <ul>
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="about.html">About</a></li>
+        </ul>
     </nav>
 </header>
 
@@ -47,13 +50,13 @@
     <section>
         <h3>Features</h3>
 
-        <ul>
-            <li>Create notes</li>
-            <li>Edit notes</li>
-            <li>Delete notes</li>
-            <li>Organize information easily</li>
-            <li>Simple and clean interface</li>
-        </ul>
+        <div class="features">
+            <div class="card">Create notes</div>
+            <div class="card">Edit notes</div>
+            <div class="card">Delete notes</div>
+            <div class="card">Organize information easily</div>
+            <div class="card">Simple and clean interface</div>
+        </div>
     </section>
 
     <section>
@@ -115,10 +118,8 @@
                 <textarea id="message" name="message" rows="5" cols="40" required></textarea>
             </p>
 
-            <p>
-                <input type="submit" value="Send Feedback">
-                <input type="reset" value="Reset">
-            </p>
+           <button type="submit">Send Feedback</button>
+           <button type="reset">Reset</button>
 
         </form>
     </section>
