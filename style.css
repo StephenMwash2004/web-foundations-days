@@ -1,0 +1,33 @@
+:root{
+    --bg:white;
+    --text:black;
+    --warning:orange;
+    --over:red;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:Arial;
+    padding:30px;
+}
+textarea{
+    width:100%;
+    height: 200px;
+    font-size: 18px;
+}
+.warning{
+    color: var(--warning);
+}
+.over{
+    color: var(--over);
+}
+.dark{
+    --bg:#222;
+    --text:white;
+}
